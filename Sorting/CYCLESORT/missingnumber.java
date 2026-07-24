@@ -13,7 +13,7 @@ public class missingnumber {
     
     while(index < arr.length){
       int correct = arr[index];
-      if( arr[index]< arr.length && correct != index){
+      if( arr[index]< arr.length && arr[correct] != arr[index]){
         int temp = arr[index];
         arr[index] = arr[correct];
         arr[correct] = temp;
