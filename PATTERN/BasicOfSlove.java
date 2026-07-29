@@ -13,7 +13,7 @@ public class BasicOfSlove {
     // patternTwo(n);
     // patternThree(n);
     // patternFour(n);
-    patternFive(n);
+    // patternFive(n);
     
     
   }
@@ -99,10 +99,10 @@ public class BasicOfSlove {
   //       }
   //     }
 
-  //   }
+    // }
 
-      
-  }
+ 
+  // }
 
 
 }
