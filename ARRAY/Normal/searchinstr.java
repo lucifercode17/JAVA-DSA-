@@ -1,4 +1,6 @@
-package ARRAY;
+package ARRAY.Normal;
+
+;
 
 public class searchinstr {
   public static void main(String[] args) {
@@ -22,17 +24,16 @@ public class searchinstr {
     return false;
   }
 
-  static boolean charsearch1(String str, char target){
-    if(str.length() == 0){
+  static boolean charsearch1(String str, char target) {
+    if (str.length() == 0) {
       return false;
     }
-    for(char ch :str.toCharArray()){
-      if(ch == target){
+    for (char ch : str.toCharArray()) {
+      if (ch == target) {
         return true;
       }
     }
 
-
     return false;
-}
+  }
 }

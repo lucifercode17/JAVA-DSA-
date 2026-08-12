@@ -24,7 +24,7 @@ public class searchinmatrix {
       }
       else if (matrix[r][c] < target) {
         r++;
-        
+
       }else{
         c--;
       }
