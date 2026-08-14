@@ -16,7 +16,8 @@ import java.util.Arrays;
 public class bubblesort {
   public static void main(String[] args) {
     int[] arr = { 3, 2, 6, 7, 1, 9, 2, 7, 8 };
-    sort(arr);
+    // sort(arr);
+    recursionsort(arr,arr.length-1, 0);
     System.out.println(Arrays.toString(arr));
 
   }
@@ -31,6 +32,25 @@ public class bubblesort {
           arr[j - 1] = temp;
         }
       }
+    }
+  }
+
+  // bubble sort with resursion
+  static void recursionsort(int[] arr, int i, int j) {
+    if(i==0){
+      return;
+    }
+    
+    if (j<i) {
+      if (arr[j] > arr[j +1]) {
+      int temp = arr[j];
+      arr[j] = arr[j + 1];
+      arr[j + 1] = temp;
+      }
+      recursionsort(arr, i, j+1);
+    }
+    else{
+      recursionsort(arr, i-1, 0);
     }
   }
 
